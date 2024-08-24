@@ -4,7 +4,7 @@ pydantic >=1.8.1,<2.0.0
 requests>=2.23.0,<2.24.0
 
 # testing requirements
-pytest>=6.2.3,<6.3.0
+pytest
 
 # repo maintenance tooling 
 #black>=22.0.0,<23.0.0
