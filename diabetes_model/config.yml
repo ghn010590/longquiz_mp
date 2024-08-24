@@ -1,0 +1,60 @@
+# Package Overview
+package_name: diabetes_model
+
+# Data Files
+training_data_file: diabetes_prediction_dataset.csv
+
+# Variables
+# The variable we are attempting to predict whether there is diabetes or not
+target: diabetes
+
+pipeline_name: diabetes_model
+pipeline_save_file: diabetes_model_output_v
+
+# Features that will go inside processing pipeline
+features:
+  - gender
+  - age
+  - hypertension
+  - heart_disease
+  - smoking_history
+  - bmi
+  - HbA1c_level
+  - blood_glucose_level
+
+
+# Features names
+gender_var: gender
+age_var: age
+hypertension_var: hypertension
+heart_disease_var: heart_disease
+smoking_history_var: smoking_history
+bmi_var: bmi
+HbA1c_level_var: HbA1c_level
+blood_glucose_level_var: blood_glucose_level
+
+# Mappings for Ordinal categorical features
+
+gender_mappings: 
+  Other: 0
+  Male: 1
+  Female: 2
+
+smoking_history_mappings:
+  never: 0
+  No Info: 1
+  current: 2
+  former: 3
+  ever: 4
+  not current: 5
+
+numerical_cols:
+  age_var: age
+  hypertension_var: hypertension
+  heart_disease_var: heart_disease
+  bmi_var: bmi
+  HbA1c_level_var: HbA1c
+  blood_glucose_level_var: blood_glucose_level
+ 
+test_size: 0.3
+random_state: 42
