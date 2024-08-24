@@ -20,7 +20,7 @@ def run_training() -> None:
     # read training data
     print(config.app_config.training_data_file)
     #data = load_dataset(file_name = config.app_config.training_data_file)
-    data = pd.read_csv("C:\AI&MLOps\LongQuiz_MP_M3M4\diabetes_model\datasets\diabetes_prediction_dataset.csv") 
+    data = pd.read_csv("datasets/diabetes_prediction_dataset.csv") 
     
     X = data.drop("diabetes", axis=1)
     y = data["diabetes"]
