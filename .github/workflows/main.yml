@@ -44,7 +44,7 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements/test_requirements.txt
     - name: Test with pytest
-      run: pytest tests/
+      run: pytest diabetes_model/tests/
         
   build:
     needs: [train, test]
